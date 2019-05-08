@@ -1,0 +1,30 @@
+# Git
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gk='gitk --all&'
+alias gx='gitx --all'
+alias nah="git reset --hard; git clean -df;"
+alias gcm="git add -A && git commit -m "
+alias got='git '
+alias get='git '
+alias g='git '
+
+#Laravel
+alias art="php artisan"
+alias ptf="t --filter "
+alias pt="t "
+alias lp="laravel"
+alias serve='art serve'
+alias tinker='art tinker'
+
+t() {
+  if [ -f vendor/bin/phpunit ]; then
+    vendor/bin/phpunit "$@"
+  else
+    phpunit "$@"
+  fi
+}
